@@ -7,10 +7,12 @@
 };
 
 &key_matrix {
-    rows = <1>;
-    cols = <4>;
-    row-gpios = < &gpio0 10 GPIO_ACTIVE_LOW >;  // Example GPIO pin for row
-    col-gpios = < &gpio0 11 GPIO_ACTIVE_LOW    // GPIO pins for columns
-                  &gpio0 12 GPIO_ACTIVE_LOW
-                  &gpio0 13 GPIO_ACTIVE_LOW >;
+    rows = <4>;  // Four rows, one for each key
+    cols = <1>;  // Only one column (if using single column setup)
+
+    // Define each row GPIO pin (for individual keys)
+    row-gpios = <&gpio0 10 GPIO_ACTIVE_HIGH   // Key 1
+                 &gpio0 11 GPIO_ACTIVE_HIGH   // Key 2
+                 &gpio0 12 GPIO_ACTIVE_HIGH   // Key 3
+                 &gpio0 13 GPIO_ACTIVE_HIGH>; // Key 4
 };
