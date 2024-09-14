@@ -2,13 +2,11 @@
     keymap {
         compatible = "zmk,keymap";
 
-        keymap {
-            bindings = <
-                &kp A  // Button 1 -> A
-                &kp W  // Button 2 -> W
-                &kp S  // Button 3 -> S
-                &kp D  // Button 4 -> D
-            >;
-        };
+        bindings = <
+            &kp A  // Button 1 -> A
+            &kp W  // Button 2 -> W
+            &kp S  // Button 3 -> S
+            &kp D  // Button 4 -> D
+        >;
     };
 };
