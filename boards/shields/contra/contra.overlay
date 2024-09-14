@@ -1,0 +1,16 @@
+/ {
+    zephyr,console = &uart1;
+};
+
+&gpio0 {
+    status = "okay";
+};
+
+&key_matrix {
+    rows = <1>;
+    cols = <4>;
+    row-gpios = < &gpio0 10 GPIO_ACTIVE_LOW >;  // Example GPIO pin for row
+    col-gpios = < &gpio0 11 GPIO_ACTIVE_LOW    // GPIO pins for columns
+                  &gpio0 12 GPIO_ACTIVE_LOW
+                  &gpio0 13 GPIO_ACTIVE_LOW >;
+};
