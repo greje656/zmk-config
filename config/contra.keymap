@@ -1,15 +1,13 @@
-#include <behaviors.dtsi>
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp A  // Button 1 -> A
-                &kp W  // Button 2 -> W
-                &kp S  // Button 3 -> S
-                &kp D  // Button 4 -> D
+                &kp A
+                &kp W
+                &kp S
+                &kp D
             >;
         };
     };
